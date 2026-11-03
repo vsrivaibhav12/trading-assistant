@@ -1,0 +1,250 @@
+{
+ "backtests": [
+  {
+   "run_at": "2026-11-02T16:11:20.420182+00:00",
+   "strategy": "DONCHIAN20",
+   "mode": "swing",
+   "timeframe": "1d",
+   "universe_n": 52,
+   "trades": 401,
+   "win_rate": 30.174563591022448,
+   "avg_r": -0.08902493765586035,
+   "total_r": -35.699,
+   "profit_factor": 0.8413335466723556,
+   "max_dd_r": 64.093,
+   "t_stat": -1.3498527543711756,
+   "verdict": "Not working",
+   "avg_win_r": 1.5644214876033056,
+   "avg_loss_r": 0.80355,
+   "payoff": 1.946887546018674,
+   "by_year": {
+    "2022": {
+     "n": 34,
+     "avg_r": -0.533
+    },
+    "2023": {
+     "n": 127,
+     "avg_r": -0.048
+    },
+    "2024": {
+     "n": 131,
+     "avg_r": 0.184
+    },
+    "2025": {
+     "n": 67,
+     "avg_r": -0.214
+    },
+    "2026": {
+     "n": 42,
+     "avg_r": -0.508
+    }
+   },
+   "note": "today's big companies over 5 years: survivorship bias flatters this | shipped with the package, run on 2 Nov 2026"
+  },
+  {
+   "run_at": "2026-11-02T16:11:24.814567+00:00",
+   "strategy": "RSI2_PULLBACK",
+   "mode": "swing",
+   "timeframe": "1d",
+   "universe_n": 52,
+   "trades": 1296,
+   "win_rate": 59.876543209876544,
+   "avg_r": -0.019133487654320987,
+   "total_r": -24.797,
+   "profit_factor": 0.9185426569475424,
+   "max_dd_r": 36.99099999999994,
+   "t_stat": -1.150762854843915,
+   "verdict": "Not working",
+   "avg_win_r": 0.3603350515463918,
+   "avg_loss_r": 0.5854173076923076,
+   "payoff": 0.6155182752741265,
+   "by_year": {
+    "2022": {
+     "n": 144,
+     "avg_r": -0.072
+    },
+    "2023": {
+     "n": 297,
+     "avg_r": -0.022
+    },
+    "2024": {
+     "n": 468,
+     "avg_r": -0.005
+    },
+    "2025": {
+     "n": 284,
+     "avg_r": 0.028
+    },
+    "2026": {
+     "n": 103,
+     "avg_r": -0.129
+    }
+   },
+   "note": "today's big companies over 5 years: survivorship bias flatters this | shipped with the package, run on 2 Nov 2026"
+  },
+  {
+   "run_at": "2026-11-02T16:11:29.813193+00:00",
+   "strategy": "MOMENTUM_RESUME",
+   "mode": "swing",
+   "timeframe": "1d",
+   "universe_n": 52,
+   "trades": 435,
+   "win_rate": 32.87356321839081,
+   "avg_r": -0.023140229885057473,
+   "total_r": -10.066,
+   "profit_factor": 0.9481751110790759,
+   "max_dd_r": 45.95100000000001,
+   "t_stat": -0.42775403963140446,
+   "verdict": "Not working",
+   "avg_win_r": 1.2878671328671327,
+   "avg_loss_r": 0.6651746575342465,
+   "payoff": 1.9361337932523788,
+   "by_year": {
+    "2022": {
+     "n": 17,
+     "avg_r": -0.691
+    },
+    "2023": {
+     "n": 109,
+     "avg_r": 0.126
+    },
+    "2024": {
+     "n": 208,
+     "avg_r": 0.054
+    },
+    "2025": {
+     "n": 62,
+     "avg_r": -0.163
+    },
+    "2026": {
+     "n": 39,
+     "avg_r": -0.336
+    }
+   },
+   "note": "today's big companies over 5 years: survivorship bias flatters this | shipped with the package, run on 2 Nov 2026"
+  },
+  {
+   "run_at": "2026-11-02T16:11:42.555916+00:00",
+   "strategy": "ORB15",
+   "mode": "intraday",
+   "timeframe": "15m",
+   "universe_n": 25,
+   "trades": 179,
+   "win_rate": 39.10614525139665,
+   "avg_r": 0.05239664804469273,
+   "total_r": 9.379,
+   "profit_factor": 1.1490173024674684,
+   "max_dd_r": 13.126999999999999,
+   "t_stat": 0.722327916705695,
+   "verdict": "Unproven",
+   "avg_win_r": 1.0331142857142857,
+   "avg_loss_r": 0.5774220183486238,
+   "payoff": 1.7891840852707723,
+   "by_year": {
+    "2026": {
+     "n": 179,
+     "avg_r": 0.052
+    }
+   },
+   "note": "only ~60 days of 15-minute history exists on Yahoo - small sample | shipped with the package, run on 2 Nov 2026"
+  },
+  {
+   "run_at": "2026-11-02T16:11:55.215160+00:00",
+   "strategy": "VWAP_PULLBACK",
+   "mode": "intraday",
+   "timeframe": "15m",
+   "universe_n": 25,
+   "trades": 412,
+   "win_rate": 37.86407766990291,
+   "avg_r": -0.03756796116504854,
+   "total_r": -15.478,
+   "profit_factor": 0.9159142518769625,
+   "max_dd_r": 27.404999999999998,
+   "t_stat": -0.7104189587962431,
+   "verdict": "Not working",
+   "avg_win_r": 1.0807435897435897,
+   "avg_loss_r": 0.7190390625,
+   "payoff": 1.5030387723109129,
+   "by_year": {
+    "2026": {
+     "n": 412,
+     "avg_r": -0.038
+    }
+   },
+   "note": "only ~60 days of 15-minute history exists on Yahoo - small sample | shipped with the package, run on 2 Nov 2026"
+  },
+  {
+   "run_at": "2026-11-02T16:11:57.162496+00:00",
+   "strategy": "OPT_TREND",
+   "mode": "option",
+   "timeframe": "15m",
+   "universe_n": 3,
+   "trades": 21,
+   "win_rate": 66.66666666666666,
+   "avg_r": 0.4753809523809524,
+   "total_r": 9.983,
+   "profit_factor": 2.9095256312165265,
+   "max_dd_r": 2.2049999999999983,
+   "t_stat": 2.000513893075424,
+   "verdict": "Too early (21/30 trades)",
+   "avg_win_r": 1.0865,
+   "avg_loss_r": 0.7468571428571428,
+   "payoff": 1.4547628156082635,
+   "by_year": {
+    "2026": {
+     "n": 21,
+     "avg_r": 0.475
+    }
+   },
+   "note": "only ~60 days of 15-minute history exists on Yahoo - small sample | shipped with the package, run on 2 Nov 2026"
+  }
+ ],
+ "rotation_backtest": {
+  "broad": {
+   "with_market_filter": {
+    "cagr": 27.255312169533497,
+    "max_dd": 13.794831019907994,
+    "nifty_cagr": 9.942806883529887,
+    "nifty_max_dd": 29.343919217321492,
+    "months": 83,
+    "beat_pct": 59.036144578313255,
+    "positive_pct": 53.01204819277108
+   },
+   "always_invested": {
+    "cagr": 22.834112535105234,
+    "max_dd": 29.209120178265223,
+    "nifty_cagr": 9.942806883529887,
+    "nifty_max_dd": 29.343919217321492,
+    "months": 83,
+    "beat_pct": 59.036144578313255,
+    "positive_pct": 69.87951807228916
+   },
+   "universe_n": 154,
+   "period": "2019-12-20 to 2026-11-02"
+  },
+  "large_caps": {
+   "with_market_filter": {
+    "cagr": 19.57315125473982,
+    "max_dd": 12.211273962049118,
+    "nifty_cagr": 9.942806883529887,
+    "nifty_max_dd": 29.343919217321492,
+    "months": 83,
+    "beat_pct": 60.24096385542169,
+    "positive_pct": 48.19277108433735
+   },
+   "always_invested": {
+    "cagr": 18.194731350261172,
+    "max_dd": 23.46178448091929,
+    "nifty_cagr": 9.942806883529887,
+    "nifty_max_dd": 29.343919217321492,
+    "months": 83,
+    "beat_pct": 62.65060240963855,
+    "positive_pct": 63.855421686746986
+   },
+   "universe_n": 52,
+   "period": "2019-12-20 to 2026-11-02"
+  },
+  "run_at": "2026-11-02T16:12:27.587598+00:00",
+  "warning": "Both tests use today's surviving big companies, so they are flattered. Do not expect these numbers."
+ }
+}

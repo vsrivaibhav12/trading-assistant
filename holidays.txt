@@ -1,0 +1,2 @@
+# One NSE/MCX holiday per line as YYYY-MM-DD. Copy them from the exchange holiday list.
+# Optional: on a day with no price data the tool detects it and stays quiet anyway.

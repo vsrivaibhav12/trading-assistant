@@ -1,0 +1,42 @@
+name: tick
+# Primary trigger: cron-job.org calls this workflow's "dispatches" API every 15 minutes (reliable).
+# Backup trigger: GitHub's own scheduler (can be late; the duplicate-guard in the code makes double runs harmless).
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Ignore the duplicate-tick guard (use for manual tests)"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "7,37 2-18 * * 1-5"      # UTC hours 02-18 = 07:37-00:07 IST; 30-minute backup only
+
+concurrency:
+  group: tick
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run one tick
+        run: python -m tassist.run_tick
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CAPITAL: ${{ vars.CAPITAL }}
+          RISK_PCT: ${{ vars.RISK_PCT }}
+          FORCE: ${{ inputs.force }}
